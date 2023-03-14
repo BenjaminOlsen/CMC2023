@@ -1,7 +1,7 @@
 #N canvas 0 23 1920 1035 12;
-#X obj 116 107 bng 25 250 50 0 empty empty file\\\ open 27 7 0 10 #0400ff
+#X obj 116 108 bng 25 250 50 0 empty empty file\\\ open 27 7 0 10 #0400ff
 #c7c6ff #dfdfdf;
-#N canvas 0 22 450 278 (subpatch) 0;
+#N canvas 68 97 450 278 (subpatch) 0;
 #X array audioIn 2.48945e+07 float 2;
 #X coords 0 1 2.48945e+07 -1 160 80 2 0 0;
 #X restore 335 124 graph;
@@ -71,7 +71,7 @@
 #X msg 185 1172 1;
 #X msg 161 -158 1;
 #X obj -165 131 r reset;
-#X obj 116 146 tgl 25 0 empty empty stationary 30 7 0 10 #0f4710 #faff00
+#X obj 117 147 tgl 25 0 empty empty stationary 30 7 0 10 #0f4710 #faff00
 #dfdfdf 0 1;
 #X obj -6 974 t b f;
 #X obj -6 998 f;
@@ -101,7 +101,7 @@
 #X obj 442 1082 +;
 #X obj 442 1056 random;
 #X msg 381 1123 next \$1;
-#X obj 116 184 tgl 25 0 empty empty play\\\ granular 30 7 0 10 #0f4710
+#X obj 118 183 tgl 25 0 empty empty play\\\ granular 30 7 0 10 #0f4710
 #faff00 #dfdfdf 0 1;
 #X floatatom 300 274 8 0 0 1 audio\ len\ (ms) - - 0;
 #X obj 140 303 hsl 333 15 -2 2 0 0 empty empty empty -2 -8 0 10 #6e9d58
@@ -215,7 +215,7 @@ metronome tick;
 #X floatatom 1638 -165 5 0 0 0 - - - 0;
 #X floatatom 1469 -138 5 0 0 0 - - - 0;
 #X obj 1463 -294 s playStationary;
-#X obj -35 -150 r playStationary;
+#X obj -86 -196 r playStationary;
 #X obj 1139 -255 s grainSpeedSlider;
 #X obj 271 -306 s sensitivitySlider;
 #X obj 1206 -165 s jitterSlider;
@@ -234,7 +234,7 @@ metronome tick;
 #X obj 129 1244 t b f;
 #X obj 80 1333 line~;
 #X obj 124 1310 pack \$1 \$2;
-#X floatatom 1635 -276 5 0 0 0 - - - 0;
+#X floatatom 1637 -260 5 0 0 0 - - - 0;
 #X obj 1635 -223 s pressPlay;
 #X text 1366 443 -, f 44;
 #X obj 120 703 hsl 370 50 0 25 0 0 empty empty energy -2 -8 0 10 #ff0400

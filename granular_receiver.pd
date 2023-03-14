@@ -1,4 +1,4 @@
-#N canvas 78 179 1729 769 10;
+#N canvas 78 179 1805 769 10;
 #X msg 31 38 listen 0;
 #X msg 18 5 listen 54321;
 #X obj 18 64 netreceive -u -b 54321;
@@ -118,6 +118,7 @@ motionFrequency location distanceFilter compass energy_slider bpm_slider
 drums_toggle drums_button drum_vol_slider, f 183;
 #X obj 1652 541 outlet;
 #X text 1645 521 //drum vol slider;
+#X floatatom 1611 535 5 0 0 0 - - - 0;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -187,4 +188,5 @@ drums_toggle drums_button drum_vol_slider, f 183;
 #X connect 99 12 93 0;
 #X connect 99 13 94 0;
 #X connect 99 14 97 0;
+#X connect 99 14 102 0;
 #X connect 99 15 100 0;

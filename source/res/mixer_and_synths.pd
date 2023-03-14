@@ -7,13 +7,13 @@
 #X obj 303 88 moses 1;
 #X obj 398 100 t b f;
 #X obj 249 232 tabplay~ sample_array;
-#X obj 277 175 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 447 187 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 10000 1;
+#X obj 277 175 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 447 187 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
 #X obj 304 349 *~;
 #X obj 553 227 soundfiler;
-#X floatatom 547 274 5 0 0 0 - - -;
+#X floatatom 547 274 5 0 0 0 - - - 0;
 #X msg 550 143 read samples/404553__inspectorj__clap-single-7.wav sample_array
 ;
 #N canvas 0 22 450 278 (subpatch) 0;
@@ -3218,10 +3218,10 @@
 #X restore 680 195 graph;
 #X obj 558 80 loadbang;
 #X obj 533 407 dbtorms;
-#X floatatom 524 463 5 0 0 0 - - -;
+#X floatatom 524 463 5 0 0 0 - - - 0;
 #X obj 442 343 / 64;
 #X obj 291 481 throw~ groove_sound;
-#X floatatom 207 45 5 0 0 0 - - -;
+#X floatatom 207 45 5 0 0 0 - - - 0;
 #X obj 107 -9 r realtime_velocity;
 #X connect 0 0 2 0;
 #X connect 2 1 3 0;
@@ -3243,10 +3243,13 @@
 #X obj 84 348 *~;
 #X obj 148 306 r groove_volume;
 #X obj 84 239 catch~ groove_sound;
-#X floatatom 183 352 5 0 0 0 - - -;
+#X floatatom 183 352 5 0 0 0 - - - 0;
 #X obj 346 310 r generated_drum_volume;
 #X obj 282 244 catch~ generate_drum_sound;
 #X text 162 180 mixing sounds here;
+#X obj 342 395 *~;
+#X floatatom 426 417 5 0 0 0 - - - 0;
+#X obj 405 365 r drumVol;
 #X connect 1 0 0 1;
 #X connect 1 0 0 0;
 #X connect 3 0 0 0;
@@ -3255,4 +3258,6 @@
 #X connect 4 0 6 0;
 #X connect 5 0 3 0;
 #X connect 7 0 1 1;
+#X connect 7 0 11 0;
 #X connect 8 0 1 0;
+#X connect 12 0 11 0;
