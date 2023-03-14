@@ -133,6 +133,8 @@ if __name__ == '__main__':
                 voice_thresholds_=voice_thresholds,
                 voice_max_count_allowed_=voice_max_count_allowed)
 
+
+            print(h_new)
             # case 2. generate randomly
             # h_new, v_new, o_new = generate_random_pattern(
             #     model_=groove_transformer_vae,

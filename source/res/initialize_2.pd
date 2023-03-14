@@ -1,4 +1,4 @@
-#N canvas 552 317 1368 823 12;
+#N canvas 202 240 1656 823 12;
 #X obj 66 109 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 66 27 loadbang;
@@ -50,9 +50,22 @@ max_count_5_in 6 \; max_count_6_in 6 \; max_count_7_in 3 \; max_count_8_in
 4 \; vel_scale_0_in 3 \; vel_scale_1_in 3 \; vel_scale_2_in 3 \; vel_scale_3_in
 3 \; vel_scale_4_in 3 \; vel_scale_5_in 3 \; vel_scale_6_in 3 \; vel_scale_7_in
 3 \; vel_scale_8_in 3 \;;
+#X msg 62 316 \; ut1r 0 \; ut2r 0 \; ut3r 0 \; ut4r 0 \; ut5r 0 \;
+ut6r 0 \; ut7r 0 \; ut8r 0 \; ut9r 0 \; ut10r 0 \; ut11r 0 \; ut12r
+0 \; ut13r 0 \; ut14r 0 \; ut15r 0 \; ut16r 0 \; ut17r 0 \; ut18r 0
+\; ut19r 0 \; ut20r 0 \; ut21r 0 \; ut22r 0 \; ut23r 0 \; ut24r 0 \;
+ut25r 0 \; ut26r 0 \; ut27r 0 \; ut28r 0 \; ut29r 0 \; ut30r 0 \; ut31r
+0 \; ut32r 0 \;;
+#X msg -19 316 \; v1 0 \; v2 0 \; v3 0 \; v4 0 \; v5 0 \; v6 0 \; v7
+0 \; v8 0 \; v9 0 \; v10 0 \; v11 0 \; v12 0 \; v13 0 \; v14 0 \; v15
+0 \; v16 0 \; v17 0 \; v18 0 \; v19 0 \; v20 0 \; v21 0 \; v22 0 \;
+v23 0 \; v24 0 \; v25 0 \; v26 0 \; v27 0 \; v28 0 \; v29 0 \; v30
+0 \; v31 0 \; v32 0 \;;
 #X connect 0 0 3 0;
 #X connect 1 0 5 0;
 #X connect 2 0 0 0;
+#X connect 3 3 19 0;
+#X connect 3 4 18 0;
 #X connect 3 5 8 0;
 #X connect 3 6 9 0;
 #X connect 3 12 4 0;
