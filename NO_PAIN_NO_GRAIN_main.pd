@@ -1,4 +1,4 @@
-#N canvas -81 66 1920 988 12;
+#N canvas 0 66 1920 988 12;
 #X obj 786 18 granular_receiver, f 142;
 #X obj 1146 396 drum_seq;
 #X obj 137 110 everything;

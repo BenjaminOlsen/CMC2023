@@ -1,11 +1,5 @@
 #N canvas 522 85 1384 973 12;
-#X obj 101 101 cnv 15 798 798 empty empty empty 20 12 0 14 #e0e0e0
-#404040 0;
-#X text 793 -28 Todo: 1 per voice tres 2 per voice max count 3 scale
-velocities of sliders 4 live record via midi, f 38;
-#X obj 949 111 cnv 15 400 200 empty empty Settings_and_Source_Not_Shown_On_Main_GUI
-20 12 0 14 #fc0400 #404040 0;
-#X obj 132 102 hradio 15 1 0 10 empty empty empty 0 -8 0 10 #fcfcfc
+#X obj 105 492 hradio 15 1 0 10 empty empty empty 0 -8 0 10 #fcfcfc
 #000000 #000000 0;
 #N canvas 0 23 960 823 \$0-setting-panes 0;
 #X obj 1503 64 inlet;
@@ -179,16 +173,14 @@ metronome_as_midi_out_channel 0;
 #X connect 81 0 45 0;
 #X connect 82 0 83 0;
 #X connect 83 0 40 0;
-#X coords 0 -1 1 1 300 70 1 180 80;
-#X restore 132 117 pd \$0-setting-panes;
-#X obj 128 46 loadbang;
-#X msg 129 64 1;
-#X obj 131 191 cnv 15 698 700 empty empty empty 20 12 0 14 #e4e8e4
-#404040 0;
-#X obj 112 395 vradio 20 1 0 5 empty empty empty 0 -8 0 10 #fcfcfc
+#X coords 0 823 1 822 300 70 0;
+#X restore 105 507 pd \$0-setting-panes;
+#X obj 101 436 loadbang;
+#X msg 102 454 1;
+#X obj 133 763 vradio 20 1 0 5 empty empty empty 0 -8 0 10 #fcfcfc
 #000000 #000000 0;
-#X obj -1 427 loadbang;
-#X msg 2 451 1;
+#X obj 44 820 loadbang;
+#X msg 47 844 1;
 #N canvas 327 235 1440 823 \$0-gvo 0;
 #X obj 1 1 cnv 15 698 122 empty empty empty 20 12 0 14 #e4e8e4 #404040
 0;
@@ -467,8 +459,8 @@ metronome_as_midi_out_channel 0;
 #X connect 117 0 118 0;
 #X connect 118 0 116 0;
 #X connect 119 0 117 0;
-#X coords 0 -1 1 1 700 124 1 0 0;
-#X restore 132 273 pd \$0-gvo;
+#X coords 0 823 1 822 700 124 0;
+#X restore 154 668 pd \$0-gvo;
 #N canvas 0 189 1440 657 \$0-visualizer 0;
 #X msg 1381 184 0;
 #X obj 1254 72 hradio 15 1 0 4 empty empty empty 0 -8 0 10 #fcfcfc
@@ -563,8 +555,8 @@ metronome_as_midi_out_channel 0;
 #X connect 37 2 9 0;
 #X connect 37 3 38 0;
 #X connect 38 0 2 1;
-#X coords 0 -1 1 1 700 80 1 0 0;
-#X restore 132 190 pd \$0-visualizer;
+#X coords 0 657 1 656 700 80 0;
+#X restore 130 588 pd \$0-visualizer;
 #N canvas 676 129 1244 823 \$0-params 0;
 #X obj 1 502 cnv 15 698 490 empty empty empty 20 12 0 14 #e4e8e4 #404040
 0;
@@ -2194,12 +2186,12 @@ metronome_as_midi_out_channel 0;
 #X connect 362 0 370 0;
 #X connect 364 0 368 0;
 #X connect 366 0 333 0;
-#X coords 0 -1 1 1 700 492 1 0 0;
-#X restore 132 394 pd \$0-params;
-#X obj 432 102 hradio 15 1 0 6 empty empty empty 0 -8 0 10 #fcfcfc
+#X coords 0 823 1 822 700 492 0;
+#X restore 173 846 pd \$0-params;
+#X obj 260 727 hradio 15 1 0 6 empty empty empty 0 -8 0 10 #fcfcfc
 #000000 #000000 0;
-#X obj 428 46 loadbang;
-#X msg 429 64 1;
+#X obj 256 671 loadbang;
+#X msg 257 689 1;
 #N canvas 656 23 784 825 \$0-saveloadsession 0;
 #X obj 181 781 cnv 15 398 68 empty empty empty 20 12 0 14 #e4e8e4 #404040
 0;
@@ -2414,22 +2406,22 @@ the performance;
 #X connect 43 0 4 1;
 #X connect 44 0 4 1;
 #X connect 51 0 4 1;
-#X coords 0 -1 1 1 400 70 1 180 80;
-#X restore 432 117 pd \$0-saveloadsession;
+#X coords 0 825 1 824 400 70 0;
+#X restore 260 742 pd \$0-saveloadsession;
 #X obj 860 48 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
 #X obj 860 67 s reset;
-#X obj 852 139 bng 30 250 50 0 reset empty RESET_PROGRAM -17 -10 0
-8 #fc0400 #000000 #000000;
-#X obj 851 325 bng 30 250 50 0 clear_groove_request_gui clear_groove_r
+#X obj 186 30 bng 30 250 50 0 reset empty RESET_PROGRAM -17 -10 0 8
+#fc0400 #000000 #000000;
+#X obj 262 27 bng 30 250 50 0 clear_groove_request_gui clear_groove_r
 Clear_Groove -17 -10 0 8 #fcc4c4 #000000 #000000;
-#X obj 845 359 cnv 2 45 8 empty empty Shift+D 4 4 0 9 #fc8000 #fcfcfc
+#X obj 256 61 cnv 2 45 8 empty empty Shift+D 4 4 0 9 #fc8000 #fcfcfc
 0;
 #X obj 1014 144 res/main;
-#X obj 112 271 vradio 20 1 0 3 empty empty empty 0 -8 0 10 #fcfcfc
+#X obj 134 666 vradio 20 1 0 3 empty empty empty 0 -8 0 10 #fcfcfc
 #000000 #000000 0;
-#X obj 112 190 vradio 20 1 0 4 empty empty empty 0 -8 0 10 #fcfcfc
-#000000 #000000 0;
+#X obj 29 566 vradio 20 1 0 4 empty empty empty 0 -8 0 10 #fcfcfc #000000
+#000000 0;
 #X obj 390 979 print info;
 #X text -21 957 click to open file -->;
 #N canvas 1306 546 492 281 open 0;
@@ -2549,49 +2541,43 @@ and ".sf3" extensions. This is the same for the argument., f 38;
 #X msg 227 1037 tresh -20 \, ratio 5 \, attack 10 \, release 10 \,
 gain 10, f 30;
 #X obj 660 959 else/sfont~ ./../soundfonts/rhodes.sf2;
-#X obj 850 607 bng 30 250 50 0 force_recalculate force_recalculate_r
+#X obj 105 33 bng 30 250 50 0 force_recalculate force_recalculate_r
 recalculate -13 -10 0 8 #c7c6ff #000000 #000000;
-#X obj 1021 435 r v1;
-#X floatatom 1020 480 5 0 0 0 - - - 0;
-#X floatatom 1074 481 5 0 0 0 - - - 0;
-#X obj 1075 436 r ut1;
-#X msg 42 466 1;
+#X msg 88 850 1;
 #X obj 120 957 else/sfont~ ./../soundfonts/DARBUKA_2.sf2;
-#X connect 3 0 4 0;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 9 0;
 #X connect 5 0 6 0;
-#X connect 6 0 3 0;
-#X connect 8 0 13 0;
-#X connect 9 0 10 0;
-#X connect 9 0 47 0;
-#X connect 10 0 24 0;
-#X connect 10 0 25 0;
-#X connect 13 0 31 1;
-#X connect 13 1 28 0;
-#X connect 13 2 32 1;
-#X connect 13 3 34 0;
-#X connect 14 0 17 0;
-#X connect 15 0 16 0;
-#X connect 16 0 14 0;
-#X connect 18 0 19 0;
-#X connect 24 0 11 0;
-#X connect 25 0 12 0;
-#X connect 28 0 48 0;
-#X connect 30 0 48 0;
-#X connect 31 0 38 0;
-#X connect 32 0 38 0;
-#X connect 34 0 41 0;
-#X connect 35 0 36 0;
-#X connect 35 1 36 1;
-#X connect 36 0 41 0;
-#X connect 37 0 40 0;
-#X connect 38 0 39 0;
-#X connect 38 0 39 1;
-#X connect 40 0 38 1;
-#X connect 41 0 32 0;
-#X connect 41 2 33 0;
-#X connect 43 0 44 0;
-#X connect 46 0 45 0;
-#X connect 47 0 8 0;
-#X connect 48 0 31 0;
-#X connect 48 2 26 0;
-#X coords 0 0 1 1 800 800 2 100 100;
+#X connect 5 0 39 0;
+#X connect 6 0 20 0;
+#X connect 6 0 21 0;
+#X connect 9 0 27 1;
+#X connect 9 1 24 0;
+#X connect 9 2 28 1;
+#X connect 9 3 30 0;
+#X connect 10 0 13 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X connect 14 0 15 0;
+#X connect 20 0 7 0;
+#X connect 21 0 8 0;
+#X connect 24 0 40 0;
+#X connect 26 0 40 0;
+#X connect 27 0 34 0;
+#X connect 28 0 34 0;
+#X connect 30 0 37 0;
+#X connect 31 0 32 0;
+#X connect 31 1 32 1;
+#X connect 32 0 37 0;
+#X connect 33 0 36 0;
+#X connect 34 0 35 0;
+#X connect 34 0 35 1;
+#X connect 36 0 34 1;
+#X connect 37 0 28 0;
+#X connect 37 2 29 0;
+#X connect 39 0 4 0;
+#X connect 40 0 27 0;
+#X connect 40 2 22 0;
+#X coords 0 973 1 972 800 800 0;
