@@ -1,5 +1,5 @@
-#N canvas 0 66 1920 988 12;
-#X obj 786 18 granular_receiver, f 142;
+#N canvas 14 69 1877 1035 12;
+#X obj 786 18 granular_receiver, f 90;
 #X obj 1146 396 drum_seq;
 #X obj 137 110 everything;
 #X connect 0 0 1 0;
