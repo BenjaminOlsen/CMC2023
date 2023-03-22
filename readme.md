@@ -9,6 +9,10 @@ It's a gesture based music making tool, composed of a granular synthesizer and a
 
 # Details
 
+depends on pyext extension for pd: https://github.com/grrrr/py.git
+needs python2.7 (use virtualenv for example:)
+    $ virtualenv -p python2.7 venv
+    $ source venv/bin/activate
 
 Updates 
 ----
