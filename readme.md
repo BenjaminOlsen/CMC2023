@@ -3,7 +3,7 @@ Computational Music Creativity 2023
 ----
 
 #### 
-This is the Benotronic Groove Transformer, built upon the work of Behzhad Haki's Monotonic Groove Transformer.
+This is the Benotronic Groove Transformer, built upon the work of Behzad Haki's Monotonic Groove Transformer.
 
 It's a gesture based music making tool, composed of a granular synthesizer and a drum synthesizer.
 
